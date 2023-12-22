@@ -34,7 +34,10 @@ GIF created with LiceCap
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Challenges encountered during building:
+
+1. Getting the gif file to be displayed properly.
+2. Using callback function for map, filter, reduce.
 
 ## License
 
