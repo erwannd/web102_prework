@@ -7,6 +7,10 @@
   </head>
 
   <body>
+    <div class="nav-bar" id="fixed-nav">
+        <span id="stats-nav">Stats</span> <!-- scroll to 'target-stats' -->
+        <span id="games-nav">Our Games</span> <!-- scroll to 'target-games' -->
+    </div>
     <!-- header row with logo -->
     <div class="header">
         <img id="tentacles" src="assets/tentacles.png">
@@ -20,7 +24,7 @@
     </div>
 
     <!-- top games & other interesting stats -->
-    <h2>Stats</h2>
+    <h2 id="target-stats">Stats</h2>
     <div class="stats-container">
         <div class="stats-card">
             <h3>Individual Contributions</h3>
@@ -48,7 +52,7 @@
     </div>
 
     <!-- list of games funded by Sea Monster -->
-    <h2>Our Games</h2>
+    <h2 id="target-games">Our Games</h2>
     <p>Check out each of our games below!</p>
     <div id="button-container">
         <button id="unfunded-btn">Show Unfunded Only</button>

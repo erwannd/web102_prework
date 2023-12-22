@@ -180,3 +180,37 @@ firstGameContainer.appendChild(mostFundedContent);
 let secondMostFundedContent = document.createElement('p');
 secondMostFundedContent.innerHTML = secondMostFunded.name;
 secondGameContainer.appendChild(secondMostFundedContent);
+
+/************************************************************************************
+ * Additional feature
+ */
+
+const statsNav = document.getElementById("stats-nav");
+const gamesNav = document.getElementById("games-nav");
+
+// add event listeners to each nav-bar entries
+statsNav.addEventListener('click', scrollToStats);
+gamesNav.addEventListener('click', scrollToGames);
+
+function scrollToStats() {
+    scrollToElement('target-stats');
+}
+
+function scrollToGames() {
+    scrollToElement('target-games');
+}
+
+function scrollToElement(targetId) {
+    const target = document.getElementById(targetId);
+
+    if (target) {
+        let navbarHeight = document.getElementById('fixed-nav').offsetHeight;
+        // Get distance from the top of the page to the target element
+        let targetOffset = target.offsetTop - navbarHeight;
+
+        window.scrollTo({
+            top: targetOffset,
+            behavior: 'smooth'
+        });
+    }
+}
